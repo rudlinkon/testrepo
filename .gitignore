@@ -1,3 +1,7 @@
 .idea
 .DS_Store
 .DS_Store?
+**/node_modules/
+**/package-lock.json
+**/*.hot-update.js
+**/*.hot-update.json
