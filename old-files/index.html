@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="tiny-slider.css">
+    <style>
+        ul#customize-thumbnails {
+            text-align: center;
+        }
+
+        ul#customize-thumbnails li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="carousel">
+        <li><img src="https://source.unsplash.com/collection/993239/600x400" alt=""></li>
+        <li><img src="https://source.unsplash.com/collection/1673600/600x400" alt=""></li>
+        <li><img src="https://source.unsplash.com/collection/1513994/600x400" alt=""></li>
+        <li><img src="https://source.unsplash.com/collection/502925/600x400" alt=""></li>
+        <li><img src="https://source.unsplash.com/collection/1891993/600x400" alt=""></li>
+    </ul>
+    <ul class="thumbnails" id="customize-thumbnails">
+        <li>
+          <img src="https://source.unsplash.com/collection/993239/200x200" alt="">
+        </li>
+        <li>
+          <img src="https://source.unsplash.com/collection/1673600/200x200" alt="">
+        </li>
+        <li>
+          <img src="https://source.unsplash.com/collection/1513994/200x200" alt="">
+        </li>
+        <li>
+          <img src="https://source.unsplash.com/collection/502925/200x200" alt="">
+        </li>
+        <li>
+          <img src="https://source.unsplash.com/collection/1891993/200x200" alt="">
+        </li>
+      </ul>
+    
+    <script src="tiny-slider.js"></script>
+    <script>
+    var slider = tns({
+        container: '.carousel',
+        items: 3,
+        mouseDrag: true,
+        center: true,
+        loop: true,
+        navContainer: "#customize-thumbnails",
+        navAsThumbnails: true,
+    });
+    </script>
+</body>
+</html>
