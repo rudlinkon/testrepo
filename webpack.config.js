@@ -18,7 +18,7 @@ module.exports = {
             directory: path.join(__dirname, '/'),
         },
         compress: true,
-        port: 9090,
+        port: 9091,
         liveReload: true,
     },
     plugins: [
